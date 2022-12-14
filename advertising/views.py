@@ -6,7 +6,7 @@ import pickle
 import pandas as pd
 
 @api_view(['GET'])
-def getFood(request):
+def getPrediction(request):
     daily_time_spent_on_site = request.data.get("daily_time_spent_on_site")
     age = request.data.get("age")
     area_income = request.data.get("area_income")
